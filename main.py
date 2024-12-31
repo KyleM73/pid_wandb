@@ -42,4 +42,4 @@ if __name__ == "__main__":
     }
 
     sweep_id = wandb.sweep(sweep_config, project="pid-optimization")
-    wandb.agent(sweep_id, function=sweep, count=1000)
+    wandb.agent(sweep_id, function=sweep, count=100)
